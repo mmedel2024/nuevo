@@ -9,5 +9,11 @@ pipeline {
       }
     }
 
+    stage('build') {
+      steps {
+        sh './build.sh'
+      }
+    }
+
   }
 }
